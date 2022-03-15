@@ -8,45 +8,46 @@ namespace Task_1
         static void Main(string[] args)
         {
             // Taskin shertini tam basha dushemdim ona gore bir neche yolla yazdim
-            #region List ile(int)
-            Lemon lemon = new Lemon(3);
-            Apple apple = new Apple(9);
-            Pineapple pineapple = new Pineapple(58);
 
-            List<int> basketList = new List<int>
+            
+            Lemon lemon = new Lemon("Lemon:\nA vitamin - 3 IU, C vitamin - 44.1 mg");
+            Apple apple = new Apple("Apple:\nA vitamin - 9 IU, C vitamin - 12.0 mg");
+            Pineapple pineapple = new Pineapple("Pineapple:\nA vitamin - 58 IU, C vitamin - 47.8 mg");
+
+            List<string> basketList = new List<string>
             {
                 lemon.VitaminContent,
                 apple.VitaminContent,
                 pineapple.VitaminContent
             };
 
-            int total = 0;
-            Console.WriteLine("Total vitamin contents in Basket:");
+            Console.WriteLine("Vitamin contents per 100 gram:\n");
             foreach (var item in basketList)
             {
-                total += item;
-            }
-            Console.WriteLine(total);
-            #endregion
+                Console.WriteLine(item);
+            }           
 
-            #region List ile(string)
-            //Lemon lemon = new Lemon("Lemon:\nA vitamin - 3 IU, C vitamin - 44.1 mg");
-            //Apple apple = new Apple("Apple:\nA vitamin - 9 IU, C vitamin - 12.0 mg");
-            //Pineapple pineapple = new Pineapple("Pineapple:\nA vitamin - 58 IU, C vitamin - 47.8 mg");
 
-            //List<string> basketList = new List<string>
+            #region List ile(int)
+            //Lemon lemon = new Lemon(3);
+            //Apple apple = new Apple(9);
+            //Pineapple pineapple = new Pineapple(58);
+
+            //List<int> basketList = new List<int>
             //{
             //    lemon.VitaminContent,
             //    apple.VitaminContent,
             //    pineapple.VitaminContent
             //};
 
-            //Console.WriteLine("Vitamin contents per 100 gram:\n");
+            //int total = 0;
+            //Console.WriteLine("Total vitamin contents in Basket:");
             //foreach (var item in basketList)
             //{
-            //    Console.WriteLine(item);
+            //    total += item;
             //}
-            #endregion            
+            //Console.WriteLine(total);
+            #endregion
 
             #region Dictionary ile(int)
             //Lemon lemon = new Lemon(3);

@@ -6,9 +6,9 @@ namespace Task_1
 {
     class Apple
     {
-        public int VitaminContent;
+        public string VitaminContent;
 
-        public Apple(int vitamincontent)
+        public Apple(string vitamincontent)
         {
             VitaminContent = vitamincontent;
         }
